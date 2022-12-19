@@ -5,53 +5,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Joe Kennaugh</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Portfolio // Joe Kennaugh</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
     <nav>
-      <ul>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-        <li>
-          <a href="#resume">Resume</a>
-        </li>
-      </ul>
+      <div class="nav-left">
+        <h1>Joe's Portfolio</h1>
+      </div>
+      <div class="nav-right">
+        <a href="#about">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#resume">Resume</a>
+      </div>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+    <img src="https://media.licdn.com/dms/image/D4E03AQEXhURfD8H5jA/profile-displayphoto-shrink_800_800/0/1669894009514?e=1677110400&v=beta&t=ZcFg9XnVlqmdDxpv8YtzoMTW93z4Dq-Sc6jIaWyjOfs" alt="Picture of me!">
+    <h2>Junior Frontend Developer</h2>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
+      <div>
+        <p>
+          <h3>Bio</h3>
+          A driven and critically minded Software Engineer, having studied for a BEng in Software Engineering 
+          at The University of Sheffield. I am a collaborative team player, enjoy communicating and have the confidence 
+          to speak with others at all levels. I am currently working on my frontend development skills while 
+          continuing to grow my portfolio.
+          <h3>What I'm doing now</h3>
+          I'm currently 3 weeks into an intensive 16 week course covering all of the necessary skills required
+          to work as a successful frontend developer.
+          <br>
+          So far I've learnt how to use HTML to structure a page, and also how to add CSS for styles,
+          as well as some basic JavaScript. The most challenging parts of the CSS so far have definitely
+          been using either Flexboxes or CSS grids, both took some time to wrap my head around. I also
+          found media queries very interesting.
+          <h3>What's next?</h3>
+          I'm most looking forward to using APIs and also learning about the react framework, while both of 
+          these do seem very challenging, they also seem to open up the possibilities for what I can achieve
+          as a frontend developer.
+        </p>
+      </div>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+      <section class="grid-container">
+        <section  class="grid-item firstSite">
+          <a href="https://jbkennaugh.github.io/prework-study-guide/">
+            <div>
+              <h3>My first website!</h3>
+            </div>
+          </a>
+        </section>
+        <section  class="grid-item htmlRefactor">
+          <a href="https://jbkennaugh.github.io/html5-refactor/">
+            <div>
+              <h3>Refactored site</h3>
+            </div>
+          </a>
+        </section>
+        <section class="grid-item somethingElse">
+          <a href="#">
+            <div>
+              <h3>More to come...</h3>
+            </div>
+          </a>
+        </section>
+      </section>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <div>
+        <address>
+          <a href="tel:+447464689720">+44 7464 689720</a>
+          <a href="mailto:joebkennaugh@gmail.com">joebkennaugh@gmail.com</a>
+          <a href="https://github.com/jbkennaugh">Github</a>
+        </address>
+      </div>
     </section>
   </main>
 </body>
