@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3vw;
   color: var(--colour4);
 }
 
@@ -45,6 +45,7 @@ header {
 nav {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -53,14 +54,14 @@ nav a {
   color: var(--colour4);
   padding: 0 10px;
   margin: 15px 15px;
-  font-size: 25px;
+  font-size: 1.5vw;
   transition: all 0.1s ease-in;
   border-bottom: 2px solid var(--colour4);
   border-right: 2px solid var(--colour4);
 }
 
 nav a:hover {
-  font-size: 27px;
+  font-size: 1.6vw;
   color: var(--colour3);
   border-bottom: 3px solid var(--colour3);  
   border-right: 3px solid var(--colour3);
@@ -82,6 +83,23 @@ nav a:last-child {
   align-items: center;
 }
 
+.burger {
+  display: none;
+}
+
+/* Concept for a nav bar button - unsure how to complete without JavaScript
+
+@media screen and (max-width:700px) {
+  nav a {
+    display: none;
+  }
+  .burger,
+  .burger:hover {
+    display: flex;
+    border: none;
+  }
+} */
+
 .hero-banner {
   background-color: var(--colour3);
   height: 20vh;
@@ -101,6 +119,7 @@ nav a:last-child {
 }
 
 .hero-banner h2 {
+  font-size: 2.5vw;
   background-color: var(--colour1);
   color: var(--colour4);
   padding: 15px 60px;
@@ -158,14 +177,20 @@ nav a:last-child {
   background-color: var(--colour1);
   text-decoration: none;
   font-size: 0.9rem;
-  border: 5px solid var(--colour3);
+  border: 5px solid var(--colour2);
   margin: 0.5em;
   min-height: 130px;
   min-width: 150px;
 }
 
 .grid-item:hover {
-  background-color: var(--colour2);
+  border: 6px solid var(--colour3);
+  background-color: var(--alphacolour);
+}
+
+.grid-item:hover a {  
+  font-size: 15px;
+  color: var(--colour3);
 }
 
 .grid-item a {
@@ -175,14 +200,35 @@ nav a:last-child {
   padding: 5px 10px;
 }
 
-.grid-item a:hover {
-  font-size: 15px;
-  color: var(--colour3);
+.firstSite { 
+  grid-area: firstSite;
+  background: linear-gradient(
+    rgba(53, 29, 49, 0.5),
+    var(--colour1) 
+  ),
+  url(../images/first-site.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.firstSite { grid-area: firstSite; }
+.firstSite:hover {
+  background-image: url(../images/first-site.png);
+}
 
-.htmlRefactor { grid-area: htmlRefactor; }
+.htmlRefactor { 
+  grid-area: htmlRefactor;
+  background: linear-gradient(
+    rgba(53, 29, 49, 0.5),
+    var(--colour1) 
+  ),
+  url(../images/html-refactor.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.htmlRefactor:hover {
+  background-image: url(../images/html-refactor.png);
+}
 
 .somethingElse { grid-area: somethingElse; }
 
@@ -191,14 +237,14 @@ address a {
   color: var(--colour2);
   padding: 0 10px;
   margin: 15px 15px;
-  font-size: 24px;
+  font-size: 1.5vw;
   transition: all 0.1s ease-in;
   border-bottom: 2px solid var(--colour2);
   border-right: 2px solid var(--colour2);
 }
 
 address a:hover {
-  font-size: 25px;
+  font-size: 1.6vw;
   color: var(--colour3);
   border-bottom: 3px solid var(--colour3);  
   border-right: 3px solid var(--colour3);
