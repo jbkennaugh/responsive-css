@@ -53,13 +53,13 @@ nav a {
   text-decoration: none;
   color: var(--colour4);
   padding: 0 10px;
-  margin: 15px 15px;
-  font-size: 1.5vw;
+  margin: 15px 0.8vw;
+  font-size: 2vw;
   transition: all 0.1s ease-in;
 }
 
 nav a:hover {
-  font-size: 1.6vw;
+  font-size: 2.1vw;
   color: var(--colour3);
   border-bottom: 3px solid var(--colour3);  
   border-right: 3px solid var(--colour3);
@@ -174,7 +174,7 @@ nav a:last-child {
   align-items: flex-end;
   background-color: var(--colour1);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.2vw;
   border: 5px solid var(--colour2);
   margin: 0.5em;
   min-height: 130px;
@@ -235,15 +235,34 @@ address a {
   color: var(--colour2);
   padding: 0 10px;
   margin: 15px 15px;
-  font-size: 1.5vw;
+  font-size: 2vw;
   transition: all 0.1s ease-in;
   border-bottom: 2px solid var(--colour2);
   border-right: 2px solid var(--colour2);
 }
 
 address a:hover {
-  font-size: 1.6vw;
+  font-size: 2.1vw;
   color: var(--colour3);
   border-bottom: 3px solid var(--colour3);  
   border-right: 3px solid var(--colour3);
+}
+
+@media screen and (max-width:900px) {
+  h1 {
+    font-size: 25px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  nav a:hover {
+    font-size: 19px
+  }
+  address a {
+    font-size: 18px;
+    margin: 10px 5px;
+  }
+  address a:hover {
+    font-size: 19px
+  }
 }
