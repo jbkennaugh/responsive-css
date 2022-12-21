@@ -24,7 +24,7 @@ Some of the features are as follows:
 
 ## Credits
 
-Credit to https://iconoir.com/ - Free Icons for the SVG Favicon I've used 
+Credit to https://iconoir.com/ - Free Icons for several icons used on the site 
 
 
 ## License

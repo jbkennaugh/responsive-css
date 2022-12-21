@@ -1,0 +1,31 @@
+@media screen and (max-width:900px) {
+    h1 {
+      font-size: 25px;
+    }
+    nav a {
+      font-size: 18px;
+    }
+    nav a:hover {
+      font-size: 19px
+    }
+    .hero-banner h2 {
+        font-size: 18px;
+    }
+    address a {
+      font-size: 18px;
+      margin: 10px 5px;
+    }
+    address a:hover {
+      font-size: 19px
+    }
+  }
+
+  /* Changed so border goes below h2 instead of above then added horizontal margin so spans full width */
+  @media screen and (max-width:650px) {
+    .page-section h2 {
+        padding-right: 90%;
+        margin-bottom: 10px;
+        border-right: 0px solid var(--colour1);
+        border-bottom: 5px solid var(--colour1);
+    }
+  }
